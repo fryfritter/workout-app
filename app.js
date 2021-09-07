@@ -1,11 +1,12 @@
 const express = require("express");
-
+const db = require("./db/models/index");
 const path = require("path"); // for deployment to client
 const apiRouter = express.Router(); // for deployment to client
 
 const app = express();
 
 app.use(express.json());
+db.sequelize.sync();
 
 app.use("/api", apiRouter); // for deployment to client
 

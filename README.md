@@ -35,16 +35,23 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 1. After the above - do a npm start to test backend.
 2. cd into client to perform `npm run build` followed by a `npm start` - you will see a "react logo"
+3. Deploy to Heroku - Add in the following in package JSON Scripts
+   "heroku-postbuild": "npm run client:build"
+4. In Heroku - Settings - set `SKIP_PREFLIGHT_CHECK=true` in Config Vars
 
 ---
 
-### `npm install express dotenv`
-
-### `npm install react-router-dom`
+## Installing Database "PG and Sequelize" and integrating it with Heroku-Postgres
 
 ### `npm install pg pg-hstore sequelize`
 
 ### `npm install sequelize-cli -D`
+
+## Run `npx sequelize db:create` to create local DB
+
+### `npm install express dotenv`
+
+### `npm install react-router-dom`
 
 ### `npm install cookie-parser`
 
