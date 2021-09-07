@@ -49,6 +49,18 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Run `npx sequelize db:create` to create local DB
 
+## Update app.js to connect sequelize to DB
+
+## Run `npx sequelize init:migrations` to generate migration scripts
+
+## Run `npx sequelize model:generate --name Exercise` to generate DB model
+
+## Run `npx sequelize init:seeders` to generate seeder scripts
+
+## Run `npx sequelize seed:generate --name Exercise` to generate the seed file
+
+## Run `npx sequelize db:seed:all` to run the seed file
+
 ### `npm install express dotenv`
 
 ### `npm install react-router-dom`
